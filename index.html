@@ -120,8 +120,6 @@
         }
 
         #group3{
-           /*color:black;
-           text-shadow: 0px 0px #000000;*/
             height: 500px;
             position:relative;
         }
@@ -138,11 +136,11 @@
             position:absolute;
             bottom:20px;
             left: 20%;
-            /*width: 100%;*/
         }
 
         #group4 {
             background-image: url("assets/img/bg/divider661.jpg");
+            height: 400px;
         }
 
         #barcontainer >div {
@@ -188,12 +186,94 @@
 
         .tech{
             color:white;
-           /* text-shadow: 1px 1px #000000;*/
             text-align:center;
             position:absolute;
             bottom:20px;
             width: 180px;
             font-weight: 600;
+        }
+
+        #contact{
+
+            height: 500px;
+        }
+
+        #contact h1{
+
+            margin-left: 30%;
+            margin-right: 30%;
+            text-align: center;
+            font-weight: 100;
+            font-size: 35px;
+            margin-top: 25px;
+        }
+
+        #contact hr{
+            margin-left: 350px;
+            margin-right: 350px;
+            background-color: #9C9C9C;
+            border: 0 none;
+            color: #9C9C9C;
+            height: 3px;
+        }
+
+
+        #contactcontainer div{
+
+            float:left;
+            width:33%;
+        }
+
+        #contactcontainer div h3{
+            margin-left: 10%;
+            font-weight: lighter;
+            font-size: x-large;
+            margin-bottom: 20px;
+        }
+
+        #contactcontainer div p{
+            margin-left: 10%;
+            line-height: 150%;
+            font-size: large;
+        }
+
+        #contactcontainer div p a{
+
+            text-decoration: none;
+        }
+
+        #contactcontainer div form{
+            margin-left: 10%;
+            margin-top:40px;
+            width:200px
+        }
+
+        #contactcontainer div form > div{
+           float:left;
+            width:200px;
+            margin-bottom: 30px;
+        }
+
+        #contactcontainer input{
+            width:170px;
+            height:18px;
+            font-size: medium;
+        }
+
+        #contactcontainer button{
+            font-size: medium;
+        }
+
+        #created{
+            height:150px;
+            background-color: black;
+            text-align: center;
+
+        }
+        #created h4{
+            color:white;
+            font-weight:100;
+            font-size: x-large;
         }
 
     </style>
@@ -483,14 +563,14 @@
     </div>
 </section>
 
-<div   name="contact">
+<div id="contact" name="contact">
     <div >
         <br>
         <h1 >THANKS FOR VISITING!</h1>
         <hr>
         <br>
         <br>
-        <div >
+        <div id="contactcontainer">
             <div >
                 <h3>Contact Information</h3>
                 <p><span ></span> Paradeplatz, Zurich<br/>
@@ -518,11 +598,11 @@
                         <div >
                             <input type="text"  id="text1" placeholder="Your Name">
                         </div>
-                    </div> <br>
+                    </div><br>
                     <div >
-                        <div >
+                        <!--div -->
                             <button type="submit" >Sign in</button>
-                        </div>
+                        <!--/div-->
                     </div>
                 </form>
                 </p>
@@ -537,7 +617,7 @@
 
 </div>
 
-<div >
+<div id="created">
     <div >
         <h4>Created by <a href="http://globis.co">globis</a> </h4>
     </div>
