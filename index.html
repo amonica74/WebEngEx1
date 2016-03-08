@@ -115,6 +115,14 @@
 
         }
 
+        .portfolio-section {
+            height: 500px;
+            text-align: center;
+            position:relative;
+            background-color: #F5F5F5;
+        }
+
+
         #group2 {
             background-image: url("assets/img/bg/divider22.jpg");
         }
@@ -147,6 +155,11 @@
             height: 400px;
         }
 
+        #projectcontainer >div{
+            display: inline-block;
+            margin-right: 25px;
+            width:180px
+        }
         #barcontainer >div {
             display: inline-block;
             margin-right: 25px;
@@ -196,6 +209,20 @@
             bottom:20px;
             width: 180px;
             font-weight: 600;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .profileImg{
+            width: 60px;
+            height: 60px;
+        }
+
+        .columns{
+            display:inline-block;
         }
 
         #contact{
@@ -281,6 +308,8 @@
             font-size: x-large;
         }
 
+        .profileImg {
+        }
     </style>
 
 </head>
@@ -387,31 +416,23 @@
 
 
 <!-- ==== PORTFOLIO ==== -->
-<div  id="portfolio">
-    <br>
+<div class="portfolio-section"  id="portfolio">
     <div >
-        <br>
         <h1 >I WORKED ON COOL STUFF</h1>
         <hr>
-        <br>
-        <br>
     </div>
-    <div >
-        <div >
-            <div > <p>ALL</p></div>
-            <div > <p> UI DESIGN </p></div>
-            <div > <p> ANDROID PAGE </p></div>
+    <!--<div class="columns">-->
+            <!--<div > <p>ALL</p></div>-->
+            <!--<div > <p> UI DESIGN </p></div>-->
+            <!--<div > <p> ANDROID PAGE </p></div>-->
 
-        </div>
-    </div>
-    <br>
-    <div  >
+    <!--</div>-->
+    <div  id=projectcontainer class="columns">
 
 
         <!-- PORTFOLIO IMAGE 1 -->
-
-        <div >
-            <figure>
+        <div class="images">
+            <figure >
                 <img  src="assets/img/portfolio/folio01.jpg" alt="">
                 <figcaption>
                     <h5>UI DESIGN</h5>
@@ -422,8 +443,7 @@
 
 
         <!-- PORTFOLIO IMAGE 2 -->
-
-        <div >
+        <div  class="images" >
             <figure>
                 <img  src="assets/img/portfolio/folio02.jpg" alt="">
                 <figcaption>
@@ -435,10 +455,9 @@
 
 
         <!-- PORTFOLIO IMAGE 3 -->
-
         <div >
-            <figure>
-                <img  src="assets/img/portfolio/folio03.jpg" alt="">
+            <figure class="images">
+                <img   src="assets/img/portfolio/folio03.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
                     <a data-toggle="modal" href="#myModal" >Take a Look</a>
@@ -447,9 +466,8 @@
         </div>
 
         <!-- PORTFOLIO IMAGE 3 -->
-
         <div >
-            <figure>
+            <figure class="images">
                 <img  src="assets/img/portfolio/folio04.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
@@ -457,12 +475,13 @@
                 </figcaption>
             </figure>
         </div>
+        <br>
 
 
         <!-- PORTFOLIO IMAGE 3 -->
 
         <div >
-            <figure>
+            <figure class="images">
                 <img  src="assets/img/portfolio/folio05.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
@@ -475,7 +494,7 @@
         <!-- PORTFOLIO IMAGE 3 -->
 
         <div >
-            <figure>
+            <figure class="images">
                 <img  src="assets/img/portfolio/folio06.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
@@ -485,30 +504,23 @@
         </div>
     </div>
 </div>
-<br>
-<br>
+
 
 <!--</div>&lt;!&ndash; /container &ndash;&gt;-->
 
 
 
 <!-- ==== BLOG ==== -->
-<div  id="blog">
-    <br>
-    <div >
-        <br>
+<div class="portfolio-section"  id="blog">
         <h1 >MY  PERSONAL BLOG</h1>
         <hr>
-        <br>
-        <br>
-    </div>
 
     <div >
         <div  >
             <div  >
                 <div >
                     <br>
-                    <p><img  src="assets/img/team/u1.jpg" width="60px" height="60px"></p>
+                    <p><img  src="assets/img/team/u1.jpg" class=profileImg ></p>
                     <h4>Pinco Pallino</h4>
                     <h5>Published Feb 28.</h5>
                 </div>
@@ -524,7 +536,7 @@
             <div >
                 <div >
                     <br>
-                    <p><img  src="assets/img/team/u1.jpg" width="60px" height="60px"></p>
+                    <p><img  src="assets/img/team/u1.jpg" class=profileImg ></p>
                     <h4>Pinco Pallino</h4>
                     <h5>Published Feb 02.</h5>
                 </div>
