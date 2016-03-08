@@ -10,7 +10,7 @@
     <style>
 
         body{
-            font-family: 'Gill Sans';
+            font-family: Lato,sans-serif;
             font-weight: lighter;
         }
         #menu {
@@ -121,21 +121,25 @@
 
         #group3{
             height: 500px;
+            text-align: center;
             position:relative;
+            background-color: #F5F5F5;
         }
 
         #group3 h1{
             text-align: center;
             font-weight: lighter;
-            margin-top: 35px;
+            padding-top: 35px;
+            padding-bottom: 35px;
             font-size: 35px;
         }
 
         #barcontainer{
-
-            position:absolute;
-            bottom:20px;
-            left: 20%;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
         }
 
         #group4 {
@@ -146,20 +150,21 @@
         #barcontainer >div {
             display: inline-block;
             margin-right: 25px;
-            margin-top: 50px;
             width:180px;
         }
 
         #barhtml{
             height: 360px;
-            background-color: #c2f0f0;
-            background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#33cccc),color-stop(1,#c2f0f0));
+            background-color: #AEDAD5;
+            border-color:  #60B3A9;
+            background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#60B3A9),color-stop(1,#AEDAD5));
         }
 
         #barcss{
             height: 260px;
-            background-color: #ffe6e6;
-            background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#ffb3b3),color-stop(1,#ffe6e6));
+            background-color: #F4DCD6;
+            border-color: #E1AF9F;
+            background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#E1AF9F),color-stop(1,#F4DCD6));
         }
 
         #barjs{
@@ -309,7 +314,7 @@
 
 
 <!-- ==== HEADER ==== -->
-<div id="home" name="home">
+<div id="home" >
     <header>
         <h1><span ></span></h1>
         <p>A 2.0 web developer.</p>
@@ -320,7 +325,7 @@
 
 
 <!-- ==== ABOUT ==== -->
-<div id="about" name="about">
+<div id="about">
     <!--<div >-->
         <br>
         <div class="titleabout">
@@ -382,7 +387,7 @@
 
 
 <!-- ==== PORTFOLIO ==== -->
-<div   name="portfolio">
+<div  id="portfolio">
     <br>
     <div >
         <br>
@@ -483,12 +488,12 @@
 <br>
 <br>
 
-</div><!-- /container -->
+<!--</div>&lt;!&ndash; /container &ndash;&gt;-->
 
 
 
 <!-- ==== BLOG ==== -->
-<div   name="blog">
+<div  id="blog">
     <br>
     <div >
         <br>
@@ -563,7 +568,7 @@
     </div>
 </section>
 
-<div id="contact" name="contact">
+<div id="contact">
     <div >
         <br>
         <h1 >THANKS FOR VISITING!</h1>
