@@ -120,14 +120,6 @@
 
         }
 
-        .portfolio-section {
-            height: 500px;
-            text-align: center;
-            position:relative;
-            background-color: #F5F5F5;
-        }
-
-
         #group2 {
             background-image: url("assets/img/bg/divider22.jpg");
         }
@@ -230,8 +222,123 @@
             height: 60px;
         }
 
+        .portfolio-section {
+            height: 500px;
+            text-align: center;
+            position:relative;
+            background-color: #ffffff;
+        }
+
+
         .columns{
             display:inline-block;
+        }
+
+        #pbuttons{
+            padding-top: 20px;
+        }
+
+        #pbuttons div{
+            display:inline-block;
+            font-size: small;
+            color:white;
+            height:30px;
+            width: 100px;
+            position: relative;
+        }
+
+        #pbuttons div p{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #greendiv{
+            background-color: lightgreen;
+        }
+
+        #graydiv{
+            background-color: darkgray;
+            margin-left: 80px;
+        }
+
+        #worked{
+            padding-top: 50px;
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center;
+        }
+
+        #worked h1{
+            font-weight: 100;
+            font-size: 30px;
+            margin-top: 5px;
+        }
+
+        #projectcontainer{
+            padding-top: 25px;
+            position: absolute;
+            left:2px;
+
+        }
+
+        .images{
+            margin-left: 80px;
+            margin-bottom: 50px;
+        }
+
+        figure{
+            position: relative;
+        }
+
+        figure img{
+            padding-left: 15px;
+            width: 190px;
+            height: 120px;
+        }
+
+        figcaption {
+            display: table;
+            width: 220px;
+            height: 40px;
+            background-color: dodgerblue;
+            color:white;
+            margin-top: -15px;
+            position: absolute;
+            top:110px;
+            left:0px;
+        }
+        figcaption a{
+            color:white;
+            text-decoration: none;
+            display:table-cell;
+            font-size: small;
+            background-color: darkslategray;
+            height:20px;
+            width: 80px;
+            position: absolute;
+            right: 15px;
+            top:10px;
+            vertical-align: middle;
+            line-height: 20px;
+        }
+        figcaption h5{
+            color:white;
+            text-decoration: none;
+            display: inline-block;
+            padding-top: 15px;
+            font-size: small;
+            position: absolute;
+            left: 15px;
+        }
+
+
+        .blog-section {
+            height: 500px;
+            text-align: center;
+            position:relative;
+            background-color: #F5F5F5;
         }
 
         #contact{
@@ -433,22 +540,19 @@
 
 
 
-
-
 <!-- ==== PORTFOLIO ==== -->
-<div class="portfolio-section"  id="portfolio">
-    <div >
+<div class="portfolio-section" id="portfolio">
+    <div id="worked">
         <h1 >I WORKED ON COOL STUFF</h1>
         <hr>
     </div>
-    <!--<div class="columns">-->
-            <!--<div > <p>ALL</p></div>-->
-            <!--<div > <p> UI DESIGN </p></div>-->
-            <!--<div > <p> ANDROID PAGE </p></div>-->
+    <div id="pbuttons" >
+            <div id="greendiv"> <p>ALL</p></div>
+            <div id="graydiv"> <p> UI DESIGN </p></div>
+            <div id="graydiv"> <p> ANDROID PAGE </p></div>
 
-    <!--</div>-->
-    <div  id=projectcontainer class="columns">
-
+    </div>
+    <div  id="projectcontainer" class="columns">
 
         <!-- PORTFOLIO IMAGE 1 -->
         <div class="images">
@@ -475,8 +579,8 @@
 
 
         <!-- PORTFOLIO IMAGE 3 -->
-        <div >
-            <figure class="images">
+        <div  class="images">
+            <figure>
                 <img   src="assets/img/portfolio/folio03.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
@@ -486,8 +590,8 @@
         </div>
 
         <!-- PORTFOLIO IMAGE 3 -->
-        <div >
-            <figure class="images">
+        <div class="images">
+            <figure >
                 <img  src="assets/img/portfolio/folio04.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
@@ -500,8 +604,8 @@
 
         <!-- PORTFOLIO IMAGE 3 -->
 
-        <div >
-            <figure class="images">
+        <div class="images">
+            <figure >
                 <img  src="assets/img/portfolio/folio05.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
@@ -513,8 +617,8 @@
 
         <!-- PORTFOLIO IMAGE 3 -->
 
-        <div >
-            <figure class="images">
+        <div class="images">
+            <figure >
                 <img  src="assets/img/portfolio/folio06.jpg" alt="">
                 <figcaption>
                     <h5>ANDROID PAGE</h5>
@@ -531,7 +635,7 @@
 
 
 <!-- ==== BLOG ==== -->
-<div class="portfolio-section"  id="blog">
+<div class="blog-section"  id="blog">
         <h1 >MY  PERSONAL BLOG</h1>
         <hr>
 
