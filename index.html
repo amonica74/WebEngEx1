@@ -17,9 +17,9 @@
             background-color: black;
             height:50px;
             position:fixed;
-            top:1px;
-            right:1px;
-            left:1px;
+            top:0px;
+            right:0px;
+            left:0px;
             z-index: 10;
         }
 
@@ -336,8 +336,8 @@
 
 
         .blog-section {
-            height: 500px;
-            text-align: center;
+            height: 550px;
+            /*text-align: center;*/
             position:relative;
             background-color: #F5F5F5;
         }
@@ -347,6 +347,7 @@
             margin-left: 20%;
             margin-right: 20%;
             text-align: center;
+            margin-bottom: 50px;
         }
 
         #blogtitle h1{
@@ -358,15 +359,14 @@
         #blogcontainer{
 
             display:inline-block;
-            position: absolute;
-            left:1px;
+            width: 100%;
             vertical-align: top;
+            position: relative;
         }
 
         #blogcontainer >div{
 
             display:inline-block;
-            /*width:500px;*/
             text-align: left;
             vertical-align: top;
         }
@@ -399,9 +399,11 @@
             margin-top: 30px;
         }
         #seconddiv {
-            width: 400px;
+            width: 430px;
             background-color: white;
             height: 350px;
+            margin-left: 0px;
+            margin-right: 0px;
         }
         #seconddiv h2{
             font-weight: 200;
@@ -425,6 +427,9 @@
         #parallax {
             width: 130px;
             height: 100%;
+            position: absolute;
+            right:0px;
+            margin-top: 5px;
         }
         #parallax div{
             background-color: darkslategrey;
