@@ -227,6 +227,7 @@
             text-align: center;
             position:relative;
             background-color: #ffffff;
+            padding-bottom: 40px;
         }
 
 
@@ -258,7 +259,7 @@
             background-color: lightgreen;
         }
 
-        #graydiv{
+        .graydiv{
             background-color: darkgray;
             margin-left: 80px;
         }
@@ -340,6 +341,116 @@
             position:relative;
             background-color: #F5F5F5;
         }
+
+        #blogtitle{
+            padding-top: 50px;
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center;
+        }
+
+        #blogtitle h1{
+            font-weight: 100;
+            font-size: 30px;
+            margin-top: 5px;
+        }
+
+        #blogcontainer{
+
+            display:inline-block;
+            position: absolute;
+            left:1px;
+            vertical-align: top;
+        }
+
+        #blogcontainer >div{
+
+            display:inline-block;
+            /*width:500px;*/
+            text-align: left;
+            vertical-align: top;
+        }
+
+        #blogcontainer div div{
+
+            display:inline-block;
+            vertical-align: top;
+        }
+
+        #firstdiv{
+            width: 130px;
+            color:white;
+            background-color: darkslategrey;
+            text-align: center;
+            font-size: small;
+            font-weight:lighter;
+            height: 350px;
+        }
+
+        #firstdiv p{
+
+            padding-top: 30px;
+            padding-bottom: 20px;
+
+        }
+
+        #firstdiv h5{
+            font-size: x-small;
+            margin-top: 30px;
+        }
+        #seconddiv {
+            width: 400px;
+            background-color: white;
+            height: 350px;
+        }
+        #seconddiv h2{
+            font-weight: 200;
+            font-size: large;
+            margin-top: 20px;
+        }
+
+        #seconddiv a{
+            text-decoration: none;
+        }
+
+        #seconddiv p{
+            margin-bottom: 40px;
+            font-size: small;
+            line-height: 150%;
+        }
+
+        #seconddiv p:first-of-type { margin-top: 30px; }
+        #seconddiv p:last-of-type { margin-bottom: 0px; }
+
+        #parallax {
+            width: 130px;
+            height: 100%;
+        }
+        #parallax div{
+            background-color: darkslategrey;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        #parallax div:last-of-type { margin-bottom: 0px; }
+
+        #parallax p{
+            color: white;
+            font-size: small;
+            line-height: 150%;
+            margin-left: 10px;
+        }
+
+        #parallax p:first-of-type { margin-top: 15px; }
+
+        #parallax a{
+            text-decoration: none;
+            position: absolute;
+            bottom: 2px;
+            color:dodgerblue;
+        }
+
 
         #contact{
 
@@ -548,8 +659,8 @@
     </div>
     <div id="pbuttons" >
             <div id="greendiv"> <p>ALL</p></div>
-            <div id="graydiv"> <p> UI DESIGN </p></div>
-            <div id="graydiv"> <p> ANDROID PAGE </p></div>
+            <div class="graydiv"> <p> UI DESIGN </p></div>
+            <div class="graydiv"> <p> ANDROID PAGE </p></div>
 
     </div>
     <div  id="projectcontainer" class="columns">
@@ -636,19 +747,19 @@
 
 <!-- ==== BLOG ==== -->
 <div class="blog-section"  id="blog">
+    <div id="blogtitle">
         <h1 >MY  PERSONAL BLOG</h1>
         <hr>
-
-    <div >
-        <div  >
+    </div>
+    <div id="blogcontainer" >
+        <!--div  -->
             <div  >
-                <div >
-                    <br>
+                <div id="firstdiv">
                     <p><img  src="assets/img/team/u1.jpg" class=profileImg ></p>
                     <h4>Pinco Pallino</h4>
                     <h5>Published Feb 28.</h5>
                 </div>
-                <div >
+                <div id="seconddiv">
                     <h2>What Define Success</h2>
                     <p>No matter how old you are, where you’re from or what you do for a living, we all share something in common—a desire to be successful. .</p>
                     <p>Each person’s definition of success is different, however, as some may define success as being a loving and faithful spouse or a caring and responsible parent, while most people would equate success with wealth, fame, and power</p>
@@ -658,13 +769,12 @@
             </div>
 
             <div >
-                <div >
-                    <br>
+                <div id="firstdiv">
                     <p><img  src="assets/img/team/u1.jpg" class=profileImg ></p>
                     <h4>Pinco Pallino</h4>
                     <h5>Published Feb 02.</h5>
                 </div>
-                <div >
+                <div id="seconddiv">
                     <h2>A Beautiful Story</h2>
                     <p>One day, in a heavily crowded place, a young man was shouting at the crowd. “People look at me; I have the most beautiful heart in the world.”</p>
                     <p>Many people looked at him and were stunned to see the beautiful heart in a perfect shape, no little flaw, which looked quite amazing. Most of the people who saw his heart was mesmerized by the beauty of his heart and praised him. </p>
@@ -672,21 +782,21 @@
                     <br>
                 </div>
             </div>
-            <div >
-                <div  >
+            <div id="parallax">
+                <div >
                     <p> Parallax Tutorial</p> <p > Dec. 2015</p>
                     <p><a href="#" > Read More</a></p>
                 </div>
-                <div  >
+                <div>
                     <p> Positioning in CSS</p> <p > Nov. 2015</p>
                     <p><a href="#" > Read More</a></p>
                 </div>
-                <div  >
+                <div>
                     <p> What is Node.js?</p> <p > Sep. 2015</p>
                     <p><a href="#" > Read More</a></p>
                 </div>
             </div>
-        </div>
+        <!--/div-->
     </div>
     <br>
     <br>
