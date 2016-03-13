@@ -127,6 +127,8 @@ section div hr {
 
 #group1 {
     background-image: url("../img/bg/divider12.png");
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
@@ -544,7 +546,6 @@ figcaption h5{
     margin-left: 10%;
     margin-top:1em;
     width:100%;
-    /*height:20px;*/
     height:8em;
     display:flex;
     flex-direction: column;
@@ -552,10 +553,8 @@ figcaption h5{
 }
 
 #contactcontainer div form > div{
-    /*float:left;*/
     width:20%;
     height: 100%;
-    /*margin-bottom: 30px;*/
 }
 
 #contactcontainer input{

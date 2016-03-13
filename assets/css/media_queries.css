@@ -21,6 +21,10 @@
         font-size: 1.5em;
     }
 
+    #group3 h1{
+        font-size: 2em;
+    }
+
     #pbuttons div{
         height:3em;
         width: 10em;
@@ -187,8 +191,12 @@
     #group3{ height: 80vh;}
     .blog-section {height: 80vh}
     #group4{height: 24vh}
-    .portfolio-section{height: 100vh;}
+    .portfolio-section{height: 92vh;}
     #contact{height: 110vh;}
+
+    #about div {
+        padding-top:1em;
+    }
 
 
     #barcontainer {
