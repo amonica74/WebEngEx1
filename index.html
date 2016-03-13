@@ -33,7 +33,7 @@
             #home{ height: 80vh; }
             #home header{ font-size:150%}
             #group3{ height: 90vh;}
-            .blog-section {height: 80vh}
+            .blog-section {height: 150vh}
             #group4{height: 60vh}
             section {height: 75vh;}
             #about{ overflow: hidden;height: 85vh;resize: vertical}
@@ -490,17 +490,16 @@
         }
 
         #blogtitle{
-            padding-top: 50px;
+            padding-top: 3em;
             margin-left: 20%;
             margin-right: 20%;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 3em;
         }
 
         #blogtitle h1{
             font-weight: 100;
-            font-size: 30px;
-            margin-top: 5px;
+            font-size: 2em;
         }
 
         #blogcontainer{
@@ -514,26 +513,28 @@
             position: relative;
         }
 
-        #blogcontainer >div{
+        #blogcontainer > div{
 
-            text-align: left;
-            vertical-align: top;
-            margin: 0px;
+            display: flex;
+            flex-direction: row;
+            flex:3;
         }
+
         #blogcontainer >div:last-child{
 
-            margin-left: auto;
-            display:inline-block;
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            justify-content: space-between;
         }
 
 
         #firstdiv{
-            flex:1;
             color:white;
             background-color: darkslategrey;
             font-size: small;
             font-weight:lighter;
-            height: 100%;
+            flex:1;
         }
 
         #firstdiv p{
@@ -553,11 +554,10 @@
             text-align: center;
         }
         #seconddiv {
-            flex:2;
             background-color: white;
             padding-left: 10px;
             padding-right: 10px;
-            height: 100%;
+            flex:2;
         }
         #seconddiv h2{
             font-weight: 200;
@@ -579,9 +579,10 @@
         #seconddiv p:last-of-type { margin-bottom: 0px; }
 
         #parallax {
-            flex:1;
             height: 100%;
             margin-top: 0px;
+            margin-left: auto;
+
         }
         #parallax div{
             background-color: darkslategrey;
@@ -606,6 +607,121 @@
             position: absolute;
             bottom: 2px;
             color:dodgerblue;
+        }
+
+        @media screen and (max-width:767px) {
+
+            #blogtitle{
+                padding-top: 1em;
+                margin-bottom: 1em;
+            }
+
+            #blogtitle h1 {
+                font-size: 1.5em;
+            }
+
+            #blogcontainer{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            
+            #blogcontainer >div:last-child{
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+
+            #firstdiv{
+                display:inline-block;
+            }
+
+            #firstdiv p{
+
+                padding-top: 15%;
+                padding-bottom: 20px;
+                padding-left: 5%;
+                display:inline-block;
+
+            }
+            #firstdiv h4{
+                display:inline-block;
+                vertical-align: top;
+                padding-top: 30%;
+                padding-left: 5%;
+            }
+
+            #firstdiv h5{
+                margin-top:3%;
+            }
+
+            #seconddiv h2{
+                margin-top: 2%;
+            }
+
+            #seconddiv p{
+                margin-bottom: 1.5em;
+            }
+
+            #seconddiv p:first-of-type { margin-top: 0.5em;}
+            #tohidden {display: none;}
+            #seconddiv p:last-of-type { margin-bottom: 0em; }
+
+            #parallax {
+                margin-top: 0.5em;
+                margin-left: 2em;
+                margin-right: 2em;
+
+            }
+            #parallax div{
+                width: 30%;
+            }
+
+
+        }
+
+        @media screen and (max-width:479px) {
+
+            #blogtitle {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            #seconddiv p{
+                margin-bottom: 0.5em;
+            }
+            #firstdiv{
+                font-size: xx-small;
+                font-weight:lighter;
+                display:block;
+            }
+
+            #firstdiv p{
+
+                padding-top: 1em;
+                padding-bottom: 0.5em;
+                padding-left: 5%;
+                display: block;
+            }
+
+            #firstdiv h4{
+                padding-top: 0.5em;
+                padding-left: 5%;
+                display: block;
+            }
+
+            #firstdiv h5{
+                padding-left: 5%;
+            }
+
+            #seconddiv p:first-of-type {
+                height: 3em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 2em;
+            }
         }
 
 
@@ -909,7 +1025,8 @@
     </div>
     <div id="blogcontainer" >
         <!--div  -->
-            <!--div  -->
+            <div>
+
                 <div id="firstdiv">
                     <p><img  src="assets/img/team/u1.jpg" class=profileImg ></p>
                     <h4>Pinco Pallino</h4>
@@ -918,13 +1035,15 @@
                 <div id="seconddiv">
                     <h2>What Define Success</h2>
                     <p>No matter how old you are, where you’re from or what you do for a living, we all share something in common—a desire to be successful. .</p>
-                    <p>Each person’s definition of success is different, however, as some may define success as being a loving and faithful spouse or a caring and responsible parent, while most people would equate success with wealth, fame, and power</p>
+                    <p id="tohidden" >Each person’s definition of success is different, however, as some may define success as being a loving and faithful spouse or a caring and responsible parent, while most people would equate success with wealth, fame, and power</p>
                     <p><a href="#" > Read More</a></p>
                     <br>
                 </div>
-            <!--/div-->
 
-            <!--div -->
+            </div>
+
+            <div>
+
                 <div id="firstdiv">
                     <p><img  src="assets/img/team/u1.jpg" class=profileImg ></p>
                     <h4>Pinco Pallino</h4>
@@ -933,11 +1052,12 @@
                 <div id="seconddiv">
                     <h2>A Beautiful Story</h2>
                     <p>One day, in a heavily crowded place, a young man was shouting at the crowd. “People look at me; I have the most beautiful heart in the world.”</p>
-                    <p>Many people looked at him and were stunned to see the beautiful heart in a perfect shape, no little flaw, which looked quite amazing. Most of the people who saw his heart was mesmerized by the beauty of his heart and praised him. </p>
+                    <p id="tohidden">Many people looked at him and were stunned to see the beautiful heart in a perfect shape, no little flaw, which looked quite amazing. Most of the people who saw his heart was mesmerized by the beauty of his heart and praised him. </p>
                     <p><a href="#" > Read More</a></p>
                     <br>
                 </div>
-            <!--/div-->
+
+            </div>
             <div id="parallax">
                 <div >
                     <p> Parallax Tutorial</p> <p > Dec. 2015</p>
