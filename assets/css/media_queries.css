@@ -1,14 +1,14 @@
 
 @media screen and (min-width:768px ) and ( max-width:1023px ) {
 
-    #home{ height: 40vh; }
+    /*#home{ height: 40vh; }*/
     #home header{ font-size:200%}
-    #group3{ height: 45vh;}
-    .blog-section {height: 60vh}
-    #group4{height: 30vh}
-    section {height: 25vh;}
-    .portfolio-section{height: 75vh;}
-    #contact{height: 45vh;}
+    /*#group3{ height: 45vh;}*/
+    /*.blog-section {height: 60vh}*/
+    /*#group4{height: 30vh}*/
+    /*section {height: 25vh;}*/
+    /*.portfolio-section{height: 75vh;}*/
+    /*#contact{height: 45vh;}*/
 }
 
 @media screen and (max-width:767px) {
@@ -171,28 +171,28 @@
 
 
 @media screen and (min-width:481px ) and (max-width:767px) {
-    #home{ height: 80vh; }
-    #home header{ font-size:150%}
-    #group3{ height: 90vh;}
-    .blog-section {height: 150vh}
-    #group4{height: 60vh}
-    section {height: 75vh;}
-    #about{ overflow: hidden;height: 85vh;resize: vertical}
-    .portfolio-section{height: 130vh;}
-    #contact{height: 140vh;}
+    /*#home{ height: 80vh; }*/
+    /*#home header{ font-size:150%}*/
+    /*#group3{ height: 90vh;}*/
+    /*.blog-section {height: 150vh}*/
+    /*#group4{height: 60vh}*/
+    /*section {height: 75vh;}*/
+    /*#about{ overflow: hidden;height: 85vh;resize: vertical}*/
+    /*.portfolio-section{height: 130vh;}*/
+    /*#contact{height: 140vh;}*/
 }
 
 @media screen and (max-width:479px) {
     /*p { font-size: 0.7em; }*/
-    #home{ height: 30vh; }
+    /*#home{ height: 30vh; }*/
     #home header{ font-size:100%}
-    #group1 {height: 24vh;}
-    #group2 {height: 24vh;}
-    #group3{ height: 80vh;}
-    .blog-section {height: 80vh}
-    #group4{height: 24vh}
-    .portfolio-section{height: 92vh;}
-    #contact{height: 110vh;}
+    /*#group1 {height: 24vh;}*/
+    /*#group2 {height: 24vh;}*/
+    /*#group3{ height: 80vh;}*/
+    /*.blog-section {height: 80vh}*/
+    /*#group4{height: 24vh}*/
+    /*.portfolio-section{height: 92vh;}*/
+    /*#contact{height: 110vh;}*/
 
     #about div {
         padding-top:1em;

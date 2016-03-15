@@ -1,22 +1,32 @@
 
-#home{ height: 80vh; }
+#home{ height: 60vh; }
 #home header{ font-size:300%}
-#group3{ height: 80vh;}
-.blog-section {height: 80vh}
-#group4{height: 60vh}
-section {height: 40vh;}
-.portfolio-section{height: 75vh;}
-#contact{height: 60vh;}
+#group3{ height: 60vh;}
+.blog-section {height: 60vh}
+#group4{height: 40vh}
+section {height: 30vh;}
+.portfolio-section{height: 60vh;}
+#contact{height: 50vh;}
 
 body{
     font-family: Lato,sans-serif;
     font-weight: lighter;
     font-size: 100%;
+    width: 100%;
+}
+
+main{
+    max-width: 1200px;
+    min-width: 100px;
+    width: 100%;
+    margin:auto;
+    outline: lightgrey solid thin;
 }
 #menu {
     background-color: black;
     height:50px;
     position:fixed;
+    text-align: left;
     top:0px;
     right:0px;
     left:0px;
@@ -24,13 +34,15 @@ body{
 }
 
 #menu ul {
-    margin-left: 15px;
+    margin: auto;
+    max-width: 1200px;
     margin-top: 15px;
 }
 
 #menu li {
     display:inline-block;
     margin-right: 20px;
+    float:left;
 }
 #menu a {
     text-decoration: none;
@@ -38,9 +50,8 @@ body{
 }
 
 #home{
-    background-image: url("../img/header_bg2_old.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background: url("../img/header_bg2_1024.jpg") no-repeat center;
     position: relative;
 
 }
@@ -300,22 +311,23 @@ img{
 
 #projectcontainer{
     position: absolute;
-    width: 90%;
     left:0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 25px;
 }
 
 #projectcontainer >div{
     display: inline-block;
-    margin-right: 25px;
-    width:180px;
+    width:220px;
 }
 
 .images{
-    margin:40px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+
 }
 
 figure{
@@ -323,8 +335,7 @@ figure{
 }
 
 figure img{
-    padding-left: 15px;
-    width: 190px;
+    width: 200px;
     height: 120px;
 }
 
@@ -501,7 +512,7 @@ figcaption h5{
     text-align: center;
     font-weight: 100;
     font-size: 2em;
-    margin-top: 25px;
+    margin-top: 5%;
 }
 
 #contact hr{
@@ -510,12 +521,13 @@ figcaption h5{
     background-color: #9C9C9C;
     border: 0 none;
     color: #9C9C9C;
-    height: 3px;
+    height: 0.1em;
 }
 
 
 #contactcontainer{
     height: 100%;
+    margin-top:5%;
 }
 #contactcontainer >div{
 
