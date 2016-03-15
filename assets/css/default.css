@@ -2,7 +2,7 @@
 #home{ height: 60vh; }
 #home header{ font-size:300%}
 #group3{ height: 60vh;}
-.blog-section {height: 60vh}
+.blog-section {height: 70vh}
 #group4{height: 40vh}
 section {height: 30vh;}
 .portfolio-section{height: 60vh;}
@@ -17,7 +17,7 @@ body{
 
 main{
     max-width: 1200px;
-    min-width: 100px;
+    min-width: 320px;
     width: 100%;
     margin:auto;
     outline: lightgrey solid thin;

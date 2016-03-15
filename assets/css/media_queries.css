@@ -11,7 +11,7 @@
     /*#contact{height: 45vh;}*/
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px) and (orientation: portrait) {
 
     .titleabout h1 {
         font-size: 1.5em;
@@ -169,6 +169,18 @@
 
 }
 
+@media screen and (max-height: 481px ) and (orientation: landscape) {
+    /*#home{ height: 80vh; }*/
+    #home header{ font-size:150%}
+    /*#group3{ height: 90vh;}*/
+    /*.blog-section {height: 150vh}*/
+    /*#group4{height: 60vh}*/
+    /*section {height: 75vh;}*/
+    /*#about{ overflow: hidden;height: 85vh;resize: vertical}*/
+    #about{ overflow: hidden;resize: vertical}
+    /*.portfolio-section{height: 130vh;}*/
+    #contact{height: 140vh;}
+}
 
 @media screen and (min-width:481px ) and (max-width:767px) {
     /*#home{ height: 80vh; }*/
@@ -192,7 +204,7 @@
     #group3{ height: 80vh;}
     .blog-section {height: 80vh}
     #group4{height: 24vh}
-    .portfolio-section{height: 92vh;}
+    .portfolio-section{height: 85vh;}
     #contact{height: 110vh;}
 
     #about div {
@@ -297,16 +309,16 @@
         margin-left: 10%;
         margin-right: 10%;
     }
-    #seconddiv p{
+    .seconddiv p{
         margin-bottom: 0.5em;
     }
-    #firstdiv{
+    .firstdiv{
         font-size: xx-small;
         font-weight:lighter;
         display:block;
     }
 
-    #firstdiv p{
+    .firstdiv p{
 
         padding-top: 1em;
         padding-bottom: 0.5em;
@@ -314,22 +326,24 @@
         display: block;
     }
 
-    #firstdiv h4{
+    .firstdiv h4{
         padding-top: 0.5em;
         padding-left: 5%;
         display: block;
     }
 
-    #firstdiv h5{
+    .firstdiv h5{
         padding-left: 5%;
     }
 
-    #seconddiv p:first-of-type {
+    .seconddiv p:first-of-type {
         height: 3em;
         overflow: hidden;
         text-overflow: ellipsis;
         margin-bottom: 2em;
     }
+
+    .tohidden {display: none;}
 
     section div{
         top:6%;
