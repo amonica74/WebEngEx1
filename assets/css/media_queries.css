@@ -112,11 +112,11 @@
     }
 
 
-    #firstdiv{
+    .firstdiv{
         display:inline-block;
     }
 
-    #firstdiv p{
+    .firstdiv p{
 
         padding-top: 15%;
         padding-bottom: 20px;
@@ -124,28 +124,28 @@
         display:inline-block;
 
     }
-    #firstdiv h4{
+    .firstdiv h4{
         display:inline-block;
         vertical-align: top;
         padding-top: 30%;
         padding-left: 5%;
     }
 
-    #firstdiv h5{
+    .firstdiv h5{
         margin-top:3%;
     }
 
-    #seconddiv h2{
+    .seconddiv h2{
         margin-top: 2%;
     }
 
-    #seconddiv p{
+    .seconddiv p{
         margin-bottom: 1.5em;
     }
 
-    #seconddiv p:first-of-type { margin-top: 0.5em;}
-    #tohidden {display: none;}
-    #seconddiv p:last-of-type { margin-bottom: 0em; }
+    .seconddiv p:first-of-type { margin-top: 0.5em;}
+    .tohidden {display: none;}
+    .seconddiv p:last-of-type { margin-bottom: 0em; }
 
     #parallax {
         margin-top: 0.5em;
@@ -172,27 +172,28 @@
 
 @media screen and (min-width:481px ) and (max-width:767px) {
     /*#home{ height: 80vh; }*/
-    /*#home header{ font-size:150%}*/
+    #home header{ font-size:150%}
     /*#group3{ height: 90vh;}*/
     /*.blog-section {height: 150vh}*/
     /*#group4{height: 60vh}*/
     /*section {height: 75vh;}*/
     /*#about{ overflow: hidden;height: 85vh;resize: vertical}*/
+    #about{ overflow: hidden;resize: vertical}
     /*.portfolio-section{height: 130vh;}*/
     /*#contact{height: 140vh;}*/
 }
 
 @media screen and (max-width:479px) {
-    /*p { font-size: 0.7em; }*/
+    p { font-size: 0.7em; }
     /*#home{ height: 30vh; }*/
     #home header{ font-size:100%}
-    /*#group1 {height: 24vh;}*/
-    /*#group2 {height: 24vh;}*/
-    /*#group3{ height: 80vh;}*/
-    /*.blog-section {height: 80vh}*/
-    /*#group4{height: 24vh}*/
-    /*.portfolio-section{height: 92vh;}*/
-    /*#contact{height: 110vh;}*/
+    #group1 {height: 24vh;}
+    #group2 {height: 24vh;}
+    #group3{ height: 80vh;}
+    .blog-section {height: 80vh}
+    #group4{height: 24vh}
+    .portfolio-section{height: 92vh;}
+    #contact{height: 110vh;}
 
     #about div {
         padding-top:1em;
@@ -364,7 +365,7 @@
     }
 
     #contactcontainer >div{
-        width:100%;
+        /*width:100%;*/
         margin-bottom: 3%;
         flex:2;
     }

@@ -145,6 +145,7 @@ section div hr {
 
 #group2 {
     background-image: url("../img/bg/divider22.jpg");
+    background-size: cover;
 }
 
 #group3{
@@ -316,7 +317,8 @@ img{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 25px;
+    margin: auto;
+    margin-top: 5%;
 }
 
 #projectcontainer >div{
@@ -420,7 +422,7 @@ figcaption h5{
 }
 
 
-#firstdiv{
+.firstdiv{
     color:white;
     background-color: darkslategrey;
     font-size: small;
@@ -428,46 +430,46 @@ figcaption h5{
     flex:1;
 }
 
-#firstdiv p{
+.firstdiv p{
 
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
 
 }
-#firstdiv h4{
+.firstdiv h4{
     text-align: center;
 }
 
-#firstdiv h5{
+.firstdiv h5{
     font-size: x-small;
     margin-top: 20px;
     text-align: center;
 }
-#seconddiv {
+.seconddiv {
     background-color: white;
     padding-left: 10px;
     padding-right: 10px;
     flex:2;
 }
-#seconddiv h2{
+.seconddiv h2{
     font-weight: 200;
     font-size: large;
     margin-top: 20px;
 }
 
-#seconddiv a{
+.seconddiv a{
     text-decoration: none;
 }
 
-#seconddiv p{
+.seconddiv p{
     margin-bottom: 3em;
     font-size: small;
     line-height: 150%;
 }
 
-#seconddiv p:first-of-type { margin-top: 2em; }
-#seconddiv p:last-of-type { margin-bottom: 0px; }
+.seconddiv p:first-of-type { margin-top: 2em; }
+.seconddiv p:last-of-type { margin-bottom: 0px; }
 
 #parallax {
     height: 100%;
