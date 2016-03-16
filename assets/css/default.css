@@ -26,6 +26,7 @@ main{
     background-color: black;
     height:50px;
     position:fixed;
+    text-align: left;
     top:0px;
     right:0px;
     left:0px;
@@ -33,8 +34,11 @@ main{
 }
 
 #menu ul {
-    margin-left: 15px;
+    /*This corresponds to the max width of the main content*/
+    max-width: 1200px;
+    margin: auto;
     margin-top: 15px;
+    padding-left: 15px;
 }
 
 #menu li {
