@@ -38,9 +38,8 @@ body{
 }
 
 #home{
-    background-image: url("../img/header_bg2_old.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background: url("../img/header_bg2_1024.jpg") no-repeat center;
     position: relative;
 
 }
@@ -134,6 +133,7 @@ section div hr {
 
 #group2 {
     background-image: url("../img/bg/divider22.jpg");
+    background-size: cover;
 }
 
 #group3{
