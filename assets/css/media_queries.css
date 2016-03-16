@@ -4,11 +4,16 @@
     #home{ height: 40vh; }
     #home header{ font-size:200%}
     #group3{ height: 45vh;}
-    .blog-section {height: 60vh}
+    .blog-section {height: 60vh;overflow: scroll}
     #group4{height: 30vh}
     section {height: 25vh;}
-    .portfolio-section{height: 75vh;}
+    .portfolio-section{height: 75vh;overflow: scroll}
     #contact{height: 45vh;}
+}
+@media screen and (min-width:768px ) and ( max-width:1023px ) and (orientation: landscape){
+
+    .blog-section {height: 80vh;overflow: scroll}
+    .portfolio-section{height: 75vh;overflow: scroll}
 }
 
 @media screen and (max-width:767px){
@@ -174,11 +179,11 @@
     #home{ height: 80vh; }
     #home header{ font-size:150%}
     #group3{ height: 90vh;}
-    .blog-section {height: 150vh}
+    .blog-section {height: 150vh;overflow: scroll}
     #group4{height: 60vh}
     section {height: 75vh;}
     #about{ overflow: hidden;height: 85vh;resize: vertical}
-    .portfolio-section{height: 130vh;}
+    .portfolio-section{height: 130vh;overflow: scroll}
     #contact{height: 140vh;}
 }
 
@@ -190,9 +195,9 @@
     #group1 {height: 24vh;}
     #group2 {height: 24vh;}
     #group3{ height: 80vh;}
-    .blog-section {height: 80vh}
+    .blog-section {height: 80vh;overflow: scroll}
     #group4{height: 24vh}
-    .portfolio-section{height: 92vh;}
+    .portfolio-section{height: 92vh;overflow: scroll}
     #contact{height: 110vh;}
 
     #about div {
