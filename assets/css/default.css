@@ -12,6 +12,15 @@ body{
     font-family: Lato,sans-serif;
     font-weight: lighter;
     font-size: 100%;
+    width: 100%;
+}
+
+main{
+    max-width: 1200px;
+    min-width: 320px;
+    width: 100%;
+    margin:auto;
+    outline: lightgrey solid thin;
 }
 #menu {
     background-color: black;
