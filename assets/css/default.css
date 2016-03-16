@@ -38,12 +38,16 @@ main{
     max-width: 1200px;
     margin: auto;
     margin-top: 15px;
+    display: flex;
+}
+
+#menu li:first-of-type{
     padding-left: 15px;
 }
 
 #menu li {
     display:inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 #menu a {
     text-decoration: none;
