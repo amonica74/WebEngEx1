@@ -184,7 +184,8 @@
 
 @media screen and (max-width:479px) {
     /*p { font-size: 0.7em; }*/
-    #home{ height: 30vh; }
+
+    #home{ height: 30vh; background: url("../img/header_bg2_479.jpg") no-repeat center;}
     #home header{ font-size:100%}
     #group1 {height: 24vh;}
     #group2 {height: 24vh;}
