@@ -1,5 +1,5 @@
 
-@media screen and (min-width:768px ) and ( max-width:1023px ) {
+@media screen and (min-width:768px ) and ( max-width:1023px ) and (orientation: portrait){
 
     #home{ height: 40vh; }
     #home header{ font-size:200%}
@@ -11,7 +11,7 @@
     #contact{height: 45vh;}
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px){
 
     .titleabout h1 {
         font-size: 1.5em;
@@ -170,7 +170,7 @@
 }
 
 
-@media screen and (min-width:481px ) and (max-width:767px) {
+@media screen and (min-width:481px ) and (max-width:767px) and (orientation: landscape) {
     #home{ height: 80vh; }
     #home header{ font-size:150%}
     #group3{ height: 90vh;}
