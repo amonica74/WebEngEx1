@@ -149,7 +149,7 @@
     }
 
     #seconddiv p:first-of-type { margin-top: 0.5em;}
-    #tohidden {display: none;}
+    .tohidden {display: none;}
     #seconddiv p:last-of-type { margin-bottom: 0em; }
 
     #parallax {

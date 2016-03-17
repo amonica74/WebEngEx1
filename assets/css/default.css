@@ -3,8 +3,8 @@
 #home header{ font-size:300%}
 #group3{ height: 80vh;}
 .blog-section {height: 80vh;}
-#group4{height: 60vh}
-section {height: 40vh;}
+#group4{height: 50vh}
+#group1, #group2 {height: 40vh;}
 .portfolio-section{height: 75vh;}
 #contact{height: 60vh;}
 
@@ -33,7 +33,7 @@ main{
     z-index: 10;
 }
 
-#menu ul {
+#menu menu {
     /*This corresponds to the max width of the main content*/
     max-width: 1200px;
     margin: auto;
@@ -41,11 +41,11 @@ main{
     display: flex;
 }
 
-#menu li:first-of-type{
+#menu menuitem:first-of-type{
     padding-left: 15px;
 }
 
-#menu li {
+#menu menuitem {
     display:inline-block;
     margin-right: 15px;
 }
@@ -53,6 +53,7 @@ main{
     text-decoration: none;
     color: white;
 }
+
 
 #home{
     background-size: cover;
@@ -105,13 +106,14 @@ main{
 }
 
 
-section {
+
+#group1,#group2,#group4 {
     background-repeat: no-repeat;
     background-size: 100%;
     position:relative;
 }
 
-section div{
+#group1 div,#group2 div,#group4 div{
     position: absolute;
     top:20%;
     left:10%;
@@ -121,17 +123,17 @@ section div{
     text-shadow: 1px 1px #000000;
 }
 
-section div h1 {
+#group1 div h1,#group2 div h1,#group4 div h1 {
     font-weight: 100;
     font-size: 30px;
 }
 
-section div p {
+#group1 div p,#group2 div p,#group4 div p {
     font-weight: 100;
     font-size: 20px;
 }
 
-section div hr {
+#group1 div hr,#group2 div hr,#group4 div hr {
     margin-left: 30%;
     margin-right: 30%;
     background-color: #ffffff;
@@ -139,6 +141,40 @@ section div hr {
     color: #ffffff;
     height: 2px;
 }
+
+
+/*
+#group1,#group2,#group4 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position:relative;
+    position: absolute;
+    top:20%;
+    left:10%;
+    right:10%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px #000000;
+}
+
+#group1 h1,#group2 h1,#group4 h1 {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+#group1 p,#group2 p,#group4 p {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#group1 hr,#group2 hr,#group4 hr {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #ffffff;
+    border: 0 none;
+    color: #ffffff;
+    height: 2px;
+}*/
 
 
 #group1 {
@@ -335,17 +371,17 @@ img{
     margin:40px;
 }
 
-figure{
+#projectcontainer figure{
     position: relative;
 }
 
-figure img{
+#projectcontainer figure img{
     padding-left: 15px;
     width: 190px;
     height: 120px;
 }
 
-figcaption {
+#projectcontainer figcaption {
     display: table;
     width: 220px;
     height: 40px;
@@ -356,7 +392,7 @@ figcaption {
     top:110px;
     left:0px;
 }
-figcaption a{
+#projectcontainer figcaption a{
     color:white;
     text-decoration: none;
     display:table-cell;
@@ -370,7 +406,7 @@ figcaption a{
     vertical-align: middle;
     line-height: 20px;
 }
-figcaption h5{
+#projectcontainer figcaption h5{
     color:white;
     text-decoration: none;
     display: inline-block;
@@ -410,14 +446,14 @@ figcaption h5{
     position: relative;
 }
 
-#blogcontainer > div{
+#blogcontainer > article{
 
     display: flex;
     flex-direction: row;
     flex:3;
 }
 
-#blogcontainer >div:last-child{
+#blogcontainer >article:last-child{
 
     display: flex;
     flex-direction: column;
@@ -426,7 +462,7 @@ figcaption h5{
 }
 
 
-#firstdiv{
+.firstdiv{
     color:white;
     background-color: darkslategrey;
     font-size: small;
@@ -434,46 +470,46 @@ figcaption h5{
     flex:1;
 }
 
-#firstdiv p{
+.firstdiv p{
 
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
 
 }
-#firstdiv h4{
+.firstdiv h4{
     text-align: center;
 }
 
-#firstdiv h5{
+.firstdiv h5{
     font-size: x-small;
     margin-top: 20px;
     text-align: center;
 }
-#seconddiv {
+.seconddiv {
     background-color: white;
     padding-left: 10px;
     padding-right: 10px;
     flex:2;
 }
-#seconddiv h2{
+.seconddiv header{
     font-weight: 200;
     font-size: large;
     margin-top: 20px;
 }
 
-#seconddiv a{
+.seconddiv a{
     text-decoration: none;
 }
 
-#seconddiv p{
+.seconddiv p{
     margin-bottom: 3em;
     font-size: small;
     line-height: 150%;
 }
 
-#seconddiv p:first-of-type { margin-top: 2em; }
-#seconddiv p:last-of-type { margin-bottom: 0px; }
+.seconddiv p:first-of-type { margin-top: 2em; }
+.seconddiv p:last-of-type { margin-bottom: 0px; }
 
 #parallax {
     height: 100%;
@@ -534,32 +570,32 @@ figcaption h5{
 #contactcontainer{
     height: 100%;
 }
-#contactcontainer >div{
+#contactcontainer >article{
 
     float:left;
     width:33%;
     height: 100%;
 }
 
-#contactcontainer div h3{
+#contactcontainer article header{
     margin-left: 10%;
     font-weight: lighter;
     font-size: larger;
     margin-bottom: 20px;
 }
 
-#contactcontainer div p{
+#contactcontainer article p{
     margin-left: 10%;
     line-height: 150%;
     font-size: 15px;
 }
 
-#contactcontainer div p a{
+#contactcontainer article p a{
 
     text-decoration: none;
 }
 
-#contactcontainer div form{
+#contactcontainer article form{
     margin-left: 10%;
     margin-top:1em;
     height:8em;
@@ -568,7 +604,7 @@ figcaption h5{
     justify-content: space-between;
 }
 
-#contactcontainer div form > div{
+#contactcontainer article form > div{
     width:20%;
     height: 100%;
 }
