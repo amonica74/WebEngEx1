@@ -143,40 +143,6 @@ main{
 }
 
 
-/*
-#group1,#group2,#group4 {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position:relative;
-    position: absolute;
-    top:20%;
-    left:10%;
-    right:10%;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px #000000;
-}
-
-#group1 h1,#group2 h1,#group4 h1 {
-    font-weight: 100;
-    font-size: 30px;
-}
-
-#group1 p,#group2 p,#group4 p {
-    font-weight: 100;
-    font-size: 20px;
-}
-
-#group1 hr,#group2 hr,#group4 hr {
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: #ffffff;
-    border: 0 none;
-    color: #ffffff;
-    height: 2px;
-}*/
-
-
 #group1 {
     background-image: url("../img/bg/divider12.png");
     background-attachment: fixed;
@@ -371,49 +337,90 @@ img{
     margin:40px;
 }
 
-#projectcontainer figure{
+.portfoliofigure{
     position: relative;
-}
-
-#projectcontainer figure img{
-    padding-left: 15px;
     width: 190px;
     height: 120px;
+    overflow: hidden;
+    transform: translateZ(0);
 }
 
-#projectcontainer figcaption {
-    display: table;
-    width: 220px;
+.portfoliofigure::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background: transparent;*/
+    transition: background .35s ease-out;
+}
+
+
+.portfolioimg{
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.portfoliocaption {
+    /*width: 220px;*/
     height: 40px;
     background-color: dodgerblue;
     color:white;
-    margin-top: -15px;
     position: absolute;
-    top:110px;
+   /* top: 0px;*/
     left:0px;
+    right: 0px;
+    bottom: 0px;
+
+    transition: height .35s;
 }
-#projectcontainer figcaption a{
+
+
+.portfoliofigure:hover .portfoliocaption {
+    transform: translateY(0);
+    /*transition: transform .35s ease-out;*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3498DB), to(#FF6464));
+    opacity:0.7;
+    height: 100%;
+}
+
+.portfoliobutton{
     color:white;
     text-decoration: none;
     display:table-cell;
     font-size: small;
     background-color: darkslategray;
-    height:20px;
+    height:30px;
     width: 80px;
     position: absolute;
-    right: 15px;
-    top:10px;
+    right: 10px;
+    bottom:5px;
     vertical-align: middle;
     line-height: 20px;
 }
-#projectcontainer figcaption h5{
+.portfoliotitle{
     color:white;
     text-decoration: none;
     display: inline-block;
-    padding-top: 15px;
-    font-size: small;
+    /*padding-top: 15px;*/
+    font-size: x-small;
     position: absolute;
     left: 15px;
+    bottom:15px;
+
+    transition: position .35s;
+}
+
+
+.portfoliofigure:hover .portfoliotitle{
+   /* transform: translateY(0);*/
+    transform: translateX(-50%) translateY(-50%);
+    top:50%;
+    left:50%;
 }
 
 
