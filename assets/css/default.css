@@ -345,6 +345,7 @@ img{
     transform: translateZ(0);
 }
 
+/*
 .portfoliofigure::before {
     content: ' ';
     position: absolute;
@@ -352,9 +353,8 @@ img{
     right: 0;
     bottom: 0;
     left: 0;
-    /*background: transparent;*/
     transition: background .35s ease-out;
-}
+}*/
 
 
 .portfolioimg{
@@ -368,7 +368,7 @@ img{
 .portfoliocaption {
     /*width: 220px;*/
     height: 40px;
-    background-color: dodgerblue;
+    background-color: rgba(32,182,232, 1);
     color:white;
     position: absolute;
    /* top: 0px;*/
@@ -382,9 +382,9 @@ img{
 
 .portfoliofigure:hover .portfoliocaption {
     transform: translateY(0);
-    /*transition: transform .35s ease-out;*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3498DB), to(#FF6464));
-    opacity:0.7;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#3498DB), to(#FF6464));*/
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(52,152,219, 0.2)), to(rgba(255,100,100, 1)));
+    /*opacity:0.7;*/
     height: 100%;
 }
 
@@ -392,35 +392,45 @@ img{
     color:white;
     text-decoration: none;
     display:table-cell;
-    font-size: small;
-    background-color: darkslategray;
+    font-size: x-small;
+    background-color: rgba(64,64,64,1);
     height:30px;
     width: 80px;
     position: absolute;
     right: 10px;
     bottom:5px;
     vertical-align: middle;
-    line-height: 20px;
+    line-height: 30px;
+   /* per il popup box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);*/
+
+
+    transition: width 1s, transform 1s;
 }
+
+
 .portfoliotitle{
     color:white;
     text-decoration: none;
     display: inline-block;
-    /*padding-top: 15px;*/
     font-size: x-small;
     position: absolute;
     left: 15px;
     bottom:15px;
 
-    transition: position .35s;
+    transition: position .35s ease-in;
 }
 
 
 .portfoliofigure:hover .portfoliotitle{
-   /* transform: translateY(0);*/
     transform: translateX(-50%) translateY(-50%);
     top:50%;
     left:50%;
+}
+
+.portfoliofigure:hover .portfoliobutton{
+    transform: rotateY(360deg);
+    width:90%;
+
 }
 
 
