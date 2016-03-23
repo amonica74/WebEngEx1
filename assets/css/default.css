@@ -15,6 +15,7 @@ body{
     width: 100%;
 }
 
+
 main{
     max-width: 1200px;
     min-width: 320px;
@@ -382,9 +383,7 @@ img{
 
 .portfoliofigure:hover .portfoliocaption {
     transform: translateY(0);
-    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#3498DB), to(#FF6464));*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(52,152,219, 0.2)), to(rgba(255,100,100, 1)));
-    /*opacity:0.7;*/
     height: 100%;
 }
 
@@ -401,9 +400,6 @@ img{
     bottom:5px;
     vertical-align: middle;
     line-height: 30px;
-   /* per il popup box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);*/
-
-
     transition: width 1s, transform 1s;
 }
 
@@ -432,6 +428,64 @@ img{
     width:90%;
 
 }
+
+/* POPUP*/
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    display:none;
+    opacity: 0;
+    z-index: 2;
+}
+.overlay:target {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-weight: 200;
+    font-size: large;
+    margin-bottom:10px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: medium;
+    text-decoration: none;
+    color: red;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+.popup p {
+    font-size: small;
+    padding-top:10px;
+}
+
+/*END POPUP*/
 
 
 .blog-section {
