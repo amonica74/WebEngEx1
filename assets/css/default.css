@@ -346,17 +346,6 @@ img{
     transform: translateZ(0);
 }
 
-/*
-.portfoliofigure::before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: background .35s ease-out;
-}*/
-
 
 .portfolioimg{
     display: block;
@@ -377,13 +366,13 @@ img{
     right: 0px;
     bottom: 0px;
 
-    transition: height .35s;
+    transition: height .35s, background .7s;
 }
 
 
 .portfoliofigure:hover .portfoliocaption {
     transform: translateY(0);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(52,152,219, 0.2)), to(rgba(255,100,100, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(52,152,219, 0)), to(rgba(255,100,100, 1)));
     height: 100%;
 }
 
