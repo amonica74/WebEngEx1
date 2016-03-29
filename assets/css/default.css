@@ -14,22 +14,19 @@ body{
     font-size: 100%;
     width: 100%;
 }
-/*.to-animate{*/
-    /*position: relative;*/
 
-/*}*/
-
-/*in-view animation*/
-/*.to-animate.in-view {*/
-    /*opacity: 1;*/
-    /*-moz-transform: translate3d(0px, 0px, 0px);*/
-    /*-webkit-transform: translate3d(0px, 0px, 0px);*/
-    /*-o-transform: translate(0px, 0px);*/
-    /*-ms-transform: translate(0px, 0px);*/
-    /*transform: translate3d(0px, 0px, 0px);*/
-/*}*/
+/*class for things to be animated*/
 .to-animate {
     position: relative;
+    opacity: 0;
+    -webkit-transition: all  0.8s linear;
+    -moz-transition: all  0.8s linear;
+    transition: all 0.8s linear;
+}
+
+/*basic animation (makes it appear)*/
+.to-animate.in-view {
+    opacity: 1;
 }
 
 main{
@@ -81,11 +78,10 @@ main{
 
 #home header{
     position: absolute; left: 30%; top:35%;
-    text-align: right;
     font-weight: 100;
     line-height: 150%;
     opacity: 0;
-    transform: translate3d(-100px, 0px, 0px);
+    transform: translate3d(0px, -300px, 0px);
 }
 
 #home header.in-view{
@@ -94,7 +90,6 @@ main{
     text-align: center;
     font-weight: 300;
     text-shadow: 1px 1px #ffffff;
-    line-height: 150%;
     transform: translate3d(0px, 0px, 0px);
 
 }
@@ -118,10 +113,15 @@ main{
 #about p:first-of-type { margin-bottom: 5%; }
 #about p:last-of-type { margin-bottom: 2%; }
 
-.titleabout{
-    margin-left: 10%;
+.titleabout.to-animate{
+    margin-left: -10%;
     margin-right: 10%;
     text-align: center;
+}
+
+.titleabout.to-animate.in-view{
+    /*moves left*/
+    margin-left: 10%;
 }
 
 .titleabout h1{
@@ -225,8 +225,8 @@ main{
 
 
 
-#barhtml{
-    height:90%;
+#barhtml.to-animate{
+    height:1%;
     margin-right: 25px;
     width:180px;
     align-self: flex-end;
@@ -235,9 +235,13 @@ main{
     background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#60B3A9),color-stop(1,#AEDAD5));
     position:relative;
 }
+#barhtml.to-animate.in-view{
+    /*makes bar go up*/
+    height:90%;
+}
 
-#barcss{
-    height: 65%;
+#barcss.to-animate{
+    height: 1%;
     margin-right: 25px;
     width:180px;
     align-self: flex-end;
@@ -246,9 +250,13 @@ main{
     background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#E1AF9F),color-stop(1,#F4DCD6));
     position:relative;
 }
+#barcss.to-animate.in-view{
+    /*makes bar go up*/
+    height: 65%;
+}
 
-#barjs{
-    height: 75%;
+#barjs.to-animate{
+    height: 1%;
     margin-right: 25px;
     width:180px;
     align-self: flex-end;
@@ -256,15 +264,23 @@ main{
     background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#ffcc00),color-stop(1,#ffcc99));
     position:relative;
 }
+#barjs.to-animate.in-view {
+    /*makes bar go up*/
+    height: 75%;
+}
 
-#barwp{
-    height: 65%;
+#barwp.to-animate{
+    height: 1%;
     margin-right: 25px;
     width:180px;
     align-self: flex-end;
     background-color: #dcba83;
     background-image: -webkit-gradient(linear,left bottom, left top, color-stop(0,#bc8e5b),color-stop(1,#dcba83));
     position:relative;
+}
+#barwp.to-animate.in-view{
+    /*makes bar go up*/
+    height: 65%;
 }
 
 .percent{
@@ -351,16 +367,20 @@ img{
     position: absolute;
     width: 90%;
     left:0px;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+
 }
 
 #projectcontainer >div{
     display: inline-block;
-    margin-right: 25px;
     width:180px;
+}
+#projectcontainer >div.to-animate.in-view{
+    /*put space between elements*/
+    margin-right: 25px;
 }
 
 .images{
@@ -510,13 +530,17 @@ img{
     position:relative;
     background-color: #F5F5F5;
 }
-
-#blogtitle{
+#blogtitle.to-animate{
     padding-top: 3em;
-    margin-left: 20%;
+    margin-left: -10%;
     margin-right: 20%;
     text-align: center;
     margin-bottom: 3em;
+}
+
+#blogtitle.to-animate.in-view{
+    /*move left*/
+    margin-left: 20%;
 }
 
 #blogtitle h1{
@@ -535,11 +559,15 @@ img{
     position: relative;
 }
 
-#blogcontainer > article{
-
+#blogcontainer > article.to-animate{
+    margin-top: 25%;
     display: flex;
     flex-direction: row;
     flex:3;
+}
+#blogcontainer > article.to-animate.in-view{
+    /*goes up*/
+    margin-top: 0%;
 }
 
 #blogcontainer >article:last-child{
@@ -606,12 +634,17 @@ img{
     margin-left: auto;
 
 }
-#parallax div{
+#parallax div.to-animate{
     background-color: darkslategrey;
     width: 100%;
     height: 30%;
+    margin-right:50px;
     margin-bottom: 20px;
     position: relative;
+}
+#parallax div.to-animate.in-view{
+    /*slides right*/
+   margin-right: 0;
 }
 #parallax div:last-of-type { margin-bottom: 0px; }
 
@@ -659,11 +692,17 @@ img{
 #contactcontainer{
     height: 100%;
 }
-#contactcontainer >article{
+#contactcontainer >article.to-animate{
 
     float:left;
     width:33%;
     height: 100%;
+    margin-top:25%;
+
+}
+#contactcontainer >article.to-animate.in-view{
+    /*goes up*/
+    margin-top:0;
 }
 
 #contactcontainer article header{
