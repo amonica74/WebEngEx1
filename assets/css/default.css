@@ -47,7 +47,7 @@ main{
     z-index: 10;
 }
 
-#menu menu {
+#menu ul {
     /*This corresponds to the max width of the main content*/
     max-width: 1200px;
     margin: auto;
@@ -55,11 +55,11 @@ main{
     display: flex;
 }
 
-#menu menuitem:first-of-type{
+#menu li:first-of-type{
     padding-left: 15px;
 }
 
-#menu menuitem {
+#menu li {
     display:inline-block;
     margin-right: 15px;
 }
