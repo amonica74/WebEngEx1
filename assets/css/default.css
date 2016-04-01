@@ -1,12 +1,12 @@
 
-#home{ height: 80vh; }
-#home header{ font-size:300%}
+#homeHeader { height: 80vh; }
+#homeHeader header{ font-size:300%}
 #group3{ height: 80vh;}
 .blog-section {height: 80vh;}
 #group4{height: 50vh}
 #group1, #group2 {height: 40vh;}
 .portfolio-section{height: 75vh;}
-#contact{height: 60vh;}
+#contactText {height: 60vh;}
 
 body{
     font-family: Lato,sans-serif;
@@ -80,14 +80,14 @@ main{
     padding-bottom: 5px;
 }
 
-#home{
+#homeHeader {
     background-size: cover;
     background: url("../img/header_bg2_1024.jpg") no-repeat center;
     position: relative;
 
 }
 
-#home header{
+#homeHeader header{
     position: absolute; left: 30%; top:35%;
     font-weight: 100;
     line-height: 150%;
@@ -95,7 +95,7 @@ main{
     transform: translate3d(0px, -300px, 0px);
 }
 
-#home header.in-view{
+#homeHeader header.in-view{
     opacity: 1;
     position: absolute; left: 30%; top:35%;
     text-align: center;
@@ -106,23 +106,23 @@ main{
 }
 
 
-#about{
+#homeText {
     margin-left: 10%;
     margin-right:10%;
 }
 
-#about div {
+#homeText div {
     padding-top:2em;
 }
 
-#about p{
+#homeText p{
     margin-top: 30px;
     font-size: 90%;
     line-height: 150%;
 }
 
-#about p:first-of-type { margin-bottom: 5%; }
-#about p:last-of-type { margin-bottom: 2%; }
+#homeText p:first-of-type { margin-bottom: 5%; }
+#homeText p:last-of-type { margin-bottom: 2%; }
 
 .titleabout.to-animate{
     margin-left: -10%;
@@ -676,11 +676,11 @@ img{
 }
 
 
-#contact >div{
+#contactText >div{
     height: 100%;
 }
 
-#contact h1{
+#contactText h1{
 
     margin-left: 20%;
     margin-right: 20%;
@@ -690,7 +690,7 @@ img{
     margin-top: 25px;
 }
 
-#contact hr{
+#contactText hr{
     margin-left: 30%;
     margin-right: 30%;
     background-color: #9C9C9C;
