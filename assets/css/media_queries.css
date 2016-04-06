@@ -6,7 +6,7 @@
     #group3{ height: 45vh;}
     .blog-section {height: 60vh;overflow: scroll}
     #group4{height: 30vh}
-    section {height: 25vh;}
+    #group1, #group2  {height: 25vh;}
     .portfolio-section{height: 75vh;overflow: scroll}
     #contactText {height: 45vh;}
 }
@@ -22,7 +22,7 @@
         font-size: 1.5em;
     }
 
-    section div h1 {
+    #group1 div h1,#group2 div h1,#group4 div h1 {
         font-size: 1.5em;
     }
 
@@ -109,7 +109,8 @@
         justify-content: flex-start;
     }
 
-    #blogcontainer >div:last-child{
+    /*#blogcontainer >article:last-child*/
+    #blogcontainer aside{
 
         display: flex;
         flex-direction: row;
@@ -117,11 +118,11 @@
     }
 
 
-    #firstdiv{
+    .firstdiv{
         display:inline-block;
     }
 
-    #firstdiv p{
+    .firstdiv p{
 
         padding-top: 15%;
         padding-bottom: 20px;
@@ -129,37 +130,39 @@
         display:inline-block;
 
     }
-    #firstdiv h4{
+    .firstdiv h4{
         display:inline-block;
         vertical-align: top;
         padding-top: 30%;
         padding-left: 5%;
     }
 
-    #firstdiv h5{
+    .firstdiv h5{
         margin-top:3%;
     }
 
-    #seconddiv h2{
+    .seconddiv h2{
         margin-top: 2%;
     }
 
-    #seconddiv p{
+    .seconddiv p{
         margin-bottom: 1.5em;
     }
 
-    #seconddiv p:first-of-type { margin-top: 0.5em;}
+    .seconddiv p:first-of-type { margin-top: 0.5em;}
     .tohidden {display: none;}
-    #seconddiv p:last-of-type { margin-bottom: 0em; }
+    .seconddiv p:last-of-type { margin-bottom: 0em; }
 
     #parallax {
         margin-top: 0.5em;
         margin-left: 2em;
         margin-right: 2em;
+        height: 20%;
 
     }
-    #parallax div{
+    #parallax div.to-animate{
         width: 30%;
+        height:80%;
     }
 
     #contactText h1 {
@@ -181,7 +184,7 @@
     #group3{ height: 90vh;}
     .blog-section {height: 150vh;overflow: scroll}
     #group4{height: 60vh}
-    section {height: 75vh;}
+    #group1, #group2  {height: 75vh;}
     #homeText { overflow: hidden;height: 85vh;resize: vertical}
     .portfolio-section{height: 130vh;overflow: scroll}
     #contactText {height: 140vh;}
@@ -222,7 +225,12 @@
         margin-bottom: 15px;
     }
 
-    #barhtml {
+    /*
+    #barhtml.to-animate.in-view {
+        height:5em;
+    }*/
+
+    #barhtml.to-animate {
         width: 90%;
         height:5em;
         align-self: flex-start;
@@ -232,7 +240,13 @@
         position: relative;
     }
 
-    #barcss {
+    /*
+    #barcss.to-animate.in-view {
+        width: 65%;
+        height:5em;
+    }*/
+
+    #barcss.to-animate {
         width: 65%;
         height:5em;
         align-self: flex-start;
@@ -242,7 +256,12 @@
         position: relative;
     }
 
-    #barjs {
+    /*
+    #barjs.to-animate.in-view {
+        height:5em;
+    }*/
+
+    #barjs.to-animate {
         width: 75%;
         height:5em;
         align-self: flex-start;
@@ -251,7 +270,12 @@
         position: relative;
     }
 
-    #barwp {
+    /*
+    #barwp.to-animate.in-view {
+        height:5em;
+    }*/
+
+    #barwp.to-animate {
         width:65%;
         height:5em;
         align-self: flex-start;
@@ -298,20 +322,20 @@
         padding-top: 1em;
     }
 
-    #blogtitle {
+    #blogtitle.to-animate {
         margin-left: 10%;
         margin-right: 10%;
     }
-    #seconddiv p{
+    .seconddiv p{
         margin-bottom: 0.5em;
     }
-    #firstdiv{
+    .firstdiv{
         font-size: xx-small;
         font-weight:lighter;
         display:block;
     }
 
-    #firstdiv p{
+    .firstdiv p{
 
         padding-top: 1em;
         padding-bottom: 0.5em;
@@ -319,17 +343,17 @@
         display: block;
     }
 
-    #firstdiv h4{
+    .firstdiv h4{
         padding-top: 0.5em;
         padding-left: 5%;
         display: block;
     }
 
-    #firstdiv h5{
+    .firstdiv h5{
         padding-left: 5%;
     }
 
-    #seconddiv p:first-of-type {
+    .seconddiv p:first-of-type {
         height: 3em;
         overflow: hidden;
         text-overflow: ellipsis;
